@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/et_ico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Please Select the type of game to start scoring"
+                android:textColor="@color/color_black"
+                android:textColorHint="@color/color_black"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#FF727272" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="SINGLE GAME"
+                android:id="@+id/tvSingle"
+                android:textColor="@color/color_black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:id="@+id/tvThree"
+                android:text="BEST OF THREE (3)"
+                android:textColor="#7F7F7F"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:id="@+id/tvFive"
+                android:layout_weight="2"
+                android:text="BEST OF FIVE (5)"
+                android:textColor="#FF727272"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="#FF727272" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:background="@drawable/button"
+                android:text="CANCEL"
+                android:textSize="12sp"
+                android:textColor="#FF727272" />
+
+            <Button
+                android:id="@+id/btn_buyBRNX"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:background="@drawable/button"
+                android:text="NEXT"
+                android:textColor="#FF0F33B8"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

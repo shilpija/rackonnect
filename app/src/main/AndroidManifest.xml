@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sportskonnect">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.NETWORK" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity_Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activity_Login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".Activity_Otp"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".Activity_updateProfile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".Activity_ChooseSports"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity_UserProfile"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity_Badminton"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity_Setting"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity_MatchDetails"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity_MatchDetails1"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity_MatchDetail2"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity_MatchDetails3"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity_Chat"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".Activity_matchScore"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity_StartScoring"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity_StartScoring1"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity_MatchScoringDoubles"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity_TournamentChat"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity android:name=".Activity_Tour1"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity_JoinTour"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity_RequestTour"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity_TourOver"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity_TourList"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activity_TourForm"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+
+        <activity
+            android:name=".Activity_ScoreDouble"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity_MatchScoringReq"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity_ValidScore"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity_ChatDoubles"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            tools:replace="android:authorities"
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

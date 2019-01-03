@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "359333804390",
+    "firebase_url": "https://sportskonnect-dfeb7.firebaseio.com",
+    "project_id": "sportskonnect-dfeb7",
+    "storage_bucket": "sportskonnect-dfeb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359333804390:android:419b1144ad65f441",
+        "android_client_info": {
+          "package_name": "com.sportskonnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359333804390-hfnigs0mhs5rbbmbgda73lficog0m2ca.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sportskonnect",
+            "certificate_hash": "23584c1323165ca841473268e0aa2073e784a339"
+          }
+        },
+        {
+          "client_id": "359333804390-q7tpe4f1mqsq0m74a69d00u4bcvs19ng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwVKnAM2NSnONZ9dGUHABC-a0WG7excIE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359333804390-q7tpe4f1mqsq0m74a69d00u4bcvs19ng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

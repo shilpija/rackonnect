@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/capture_image_with_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/color_white"
+        android:text="capture_image"
+        android:background="@color/colorPrimaryDark"
+        android:padding="12dp"/>
+    <ImageView
+        android:id="@+id/photo_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="24dp"/>
+    <Button
+        android:id="@+id/image_orientation_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/color_white"
+        android:text="image_orientation"
+        android:background="@color/colorPrimaryDark"
+        android:padding="12dp"/>
+</LinearLayout>
