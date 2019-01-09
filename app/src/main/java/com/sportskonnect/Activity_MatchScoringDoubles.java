@@ -117,7 +117,6 @@ public class Activity_MatchScoringDoubles extends AppCompatActivity implements V
                 Window window = dialog.getWindow();
                 window.setLayout(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 
-
                 break;
         }
 

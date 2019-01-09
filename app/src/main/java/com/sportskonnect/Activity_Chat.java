@@ -38,6 +38,7 @@ public class Activity_Chat extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+
             case R.id.btnBack:
 
                 Intent intent = new Intent(Activity_Chat.this, Activity_Badminton.class);

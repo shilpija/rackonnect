@@ -22,6 +22,7 @@ public class Activity_MatchDetails3 extends AppCompatActivity implements View.On
 
         init();
     }
+
     private void init() {
 
         main_text_title = (TextView) findViewById(R.id.main_text_title);

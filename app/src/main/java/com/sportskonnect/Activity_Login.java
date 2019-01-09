@@ -87,6 +87,7 @@ public class Activity_Login extends AppCompatActivity implements View.OnClickLis
 
         Typeface face2 = Typeface.createFromAsset(getAssets(),
                 "fonts/Mark Simonson - Proxima Nova Alt Bold.otf");
+
         give_us_a_review_landmine_text_2.setTypeface(face2);
 
         main_text_title.setTypeface(face);
